@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Keshu Pandre | Backend Software Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Backend Engineer with strong production ownership and experience designing, maintaining, and scaling backend services in high-availability environments. Proven ability to lead incident investigation, debug complex runtime issues (pod restarts, unhandled promise rejections, memory leaks), and deliver stable fixes with minimal downtime.
 
-Currently, two official plugins are available:
+Hands-on experience building scalable APIs, designing data models, and working with microservices-based architectures using Node.js and MongoDB. Regularly involved in system-level discussions, PRD walkthroughs, technical brainstorming, and refining backend workflows such as access control, course lifecycle management, and authorization flows.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Demonstrates ownership by proactively identifying reliability gaps, improving observability and error handling, and mentoring through code reviews and design discussions. Comfortable balancing feature delivery with platform stability, and translating ambiguous product requirements into clean, maintainable, and extensible backend solutions.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Backend Expertise:**
+*   **Languages**: Node.js, TypeScript, JavaScript
+*   **Databases**: MongoDB (Certified Associate Developer), Redis
+*   **Architecture**: Microservices, Event-Driven, Distributed Systems
+*   **Core Skills**: System Design, Incident Management, API Design, Data Modeling
 
-## Expanding the ESLint configuration
+**Portfolio Frontend (This Project):**
+*   **Framework**: React 19, Vite
+*   **Styling**: Tailwind CSS v4 (using `@tailwindcss/vite`)
+*   **Components**: Lucide React, Custom UI Components
+*   **Tooling**: ESLint, TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 💻 Project Setup (Local Development)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This portfolio website is built with React + Vite. Follow these steps to run it locally.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+*   Node.js (Latest LTS recommended)
+*   pnpm (preferred package manager)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/keshupandre/portfolio.git
+cd portfolio
+
+# Install dependencies
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the local development server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm dev
 ```
+
+### Production Build
+
+Build the optimized application for production:
+
+```bash
+pnpm build
+```
+
+
+### Configuration Notes
+
+*   **Styling**: This project uses **Tailwind CSS v4** with the `@tailwindcss/vite` plugin.
+*   **Aliases**: Imports are configured with the `@` alias pointing to the `src/` directory.
