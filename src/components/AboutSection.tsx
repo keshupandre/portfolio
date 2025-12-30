@@ -4,23 +4,23 @@ export const AboutSection = () => {
   const highlights = [
     {
       icon: Server,
-      title: "Scalable Systems",
-      description: "Building distributed architectures handling millions of requests with 99.9% uptime",
+      title: "System Stability",
+      description: "Delivered high reliability and minimal downtime, handling complex runtime issues like pod restarts and memory leaks.",
     },
     {
       icon: Zap,
-      title: "Performance",
-      description: "Reduced P99 latency by 93% through MongoDB optimization and Redis caching",
+      title: "Performance Optimization",
+      description: "Deep expertise in MongoDB query optimization, indexing, and reducing system latency for high-traffic APIs.",
     },
     {
       icon: Database,
-      title: "Data Engineering",
-      description: "Expert in aggregation pipelines, indexing strategies, and efficient data flows",
+      title: "Infrastructure Support",
+      description: "Managed AWS resources, stage-to-prod migrations, and cross-pod infra support for consistent service uptime.",
     },
     {
       icon: Code2,
-      title: "Clean Architecture",
-      description: "Strong ownership, comprehensive testing, and reliable production deployments",
+      title: "Technical Ownership",
+      description: "Led feature parities (GoLang migration), incident investigations, and system design improvements for maintainability.",
     },
   ];
 
@@ -43,19 +43,20 @@ export const AboutSection = () => {
             <div className="space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
                 I'm <span className="text-foreground font-medium">Keshu Pandre</span>, a Backend Software Engineer 
-                currently working at Physics Wallah (PW Skills LMS), where I build scalable distributed systems 
-                that power educational technology for millions of students.
+                at Physics Wallah, known for delivering consistent, high-quality outcomes across backend, infrastructure, 
+                and system domains.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                With a B.Tech from <span className="text-primary">IIT BHU</span> (CGPA: 9.06), I specialize in 
-                high-performance Node.js microservices, low-latency API design, and event-driven architectures. 
-                My work involves MongoDB aggregation optimization, Redis caching with pipelines, and 
-                infrastructure debugging at scale.
+                I specialize in **Node.js, TypeScript, and MongoDB**, with growing expertise in **GoLang** and **AWS**. 
+                My work centers on building scalable microservices, optimizing heavy database queries, and ensuring 
+                system stability through proactive monitoring (Elastic APM, Winston). I have successfully led initiatives 
+                like the **YCMOU Go repo migration** and **course-batch migration**, handling critical stage-to-prod 
+                deployments and ensuring data consistency.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I'm recognized with the <span className="text-primary">Best Employee Award (Oct 2024)</span> for 
-                exceptional ownership in backend reliability. I'm also a certified MongoDB Associate Developer 
-                and have solved 450+ DSA problems on Coding Ninjas.
+                Beyond coding, I actively contribute to peer reviews, mentor teammates during complex debugging sessions, 
+                and foster a culture of shared ownership. I'm recognized with the <span className="text-primary">Best Employee Award (Oct 2024)</span> for exceptional ownership in backend reliability. 
+                I also proficiently resolve cross-pod infrastructure issues and maintain disciplined delivery processes.
               </p>
 
               {/* Stats */}
@@ -80,8 +81,8 @@ export const AboutSection = () => {
               {highlights.map((item, index) => (
                 <div
                   key={item.title}
-                  className="glass-card p-6 hover-lift"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  className="glass-card p-6 hover-lift animate-fade-up opacity-0"
+                  style={{ animationDelay: `${index * 150}ms` }}
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <item.icon className="text-primary" size={24} />
