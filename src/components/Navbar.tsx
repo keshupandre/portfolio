@@ -25,14 +25,16 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
+        isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm border-b border-border/40" : "bg-transparent backdrop-blur-[2px]"
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="font-mono text-lg font-bold text-foreground hover:text-primary transition-colors">
-            &lt;dev /&gt;
+          <a href="#" className="font-mono text-xl font-bold tracking-tighter hover:text-primary transition-colors flex items-center gap-2">
+            <span className="text-primary">&lt;</span>
+            <span className="text-foreground">dev</span>
+            <span className="text-primary">/&gt;</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -41,13 +43,13 @@ export const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group py-2"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary/80 transition-all duration-300 ease-out group-hover:w-full rounded-full" />
               </a>
             ))}
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="ml-4 shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
               Resume
             </Button>
           </div>

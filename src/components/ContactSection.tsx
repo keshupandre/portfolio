@@ -44,7 +44,7 @@ export const ContactSection = () => {
       icon: MapPin,
       label: "Location",
       value: "Balaghat, Madhya Pradesh, India",
-      href: null,
+      href: "https://www.google.com/maps/search/?api=1&query=Balaghat,+Madhya+Pradesh,+India",
     },
   ];
 

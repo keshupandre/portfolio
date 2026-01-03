@@ -47,10 +47,10 @@ export const AboutSection = () => {
                 and system domains.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I specialize in **Node.js, TypeScript, and MongoDB**, with growing expertise in **GoLang** and **AWS**. 
+                I specialize in <span className="font-medium text-foreground">Node.js, TypeScript, and MongoDB</span>, with growing expertise in <span className="font-medium text-foreground">GoLang</span> and <span className="font-medium text-foreground">AWS</span>. 
                 My work centers on building scalable microservices, optimizing heavy database queries, and ensuring 
                 system stability through proactive monitoring (Elastic APM, Winston). I have successfully led initiatives 
-                like the **YCMOU Go repo migration** and **course-batch migration**, handling critical stage-to-prod 
+                like the <span className="font-boldmedium text-foreground">YCMOU Go repo migration</span> and <span className="font-medium text-foreground">course-batch migration</span>, handling critical stage-to-prod 
                 deployments and ensuring data consistency.
               </p>
               <p className="text-muted-foreground leading-relaxed">
